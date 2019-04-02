@@ -4,25 +4,38 @@
   
     
     <entry>
-      <title>Test First Blog</title>
-      <link href="/2019/03/29/test/"/>
-      <url>/2019/03/29/test/</url>
+      <title>测试</title>
+      <link href="/2019/04/02/ce-shi/"/>
+      <url>/2019/04/02/ce-shi/</url>
       
         <content type="html"><![CDATA[]]></content>
       
       
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Ubuntu 18.04安装 Mysql5.7</title>
+      <link href="/2019/03/29/test/"/>
+      <url>/2019/03/29/test/</url>
+      
+        <content type="html"><![CDATA[<p>出现：ERROR 1045 (28000): Access denied for user ‘root‘@’localhost’ </p><h2 id="安装过程"><a href="#安装过程" class="headerlink" title="安装过程"></a>安装过程</h2><p>##1. 输入以下命令进行安装MySQL5.7</p><pre><code>1. sudo apt-get install mysql-server2. apt-get isntall mysql-client3. sudo apt-get install libmysqlclient-dev</code></pre><p>安装过程中会提示设置密码什么的，注意设置了不要忘了，安装完成之后可以使用如下命令来检查是否安装成功：</p><pre><code>sudo netstat -tap | grep mysql</code></pre><p>通过上述命令检查之后，如果看到有mysql 的socket处于 listen 状态则表示安装成功。<br>登陆mysql数据库可以通过如下命令：</p><pre><code>mysql -u root -p</code></pre><p>-u 表示选择登陆的用户名， -p 表示登陆的用户密码，上面命令输入之后会提示输入密码，此时输入密码就可以登录到mysql。</p><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>在我安装过程中，并未提示我设置root密码。安装完成后无法登陆，不带密码也无法登录。<br>在安装过程中会设置初始密码</p><pre><code>sudo vim /etc/mysql/debian.cnf</code></pre><p>然后使用其中的</p><pre><code>user = debin-sys-maintpassword = *********</code></pre><p>这个账户登录：</p><pre><code>mysql -u debin-sys-maint -p  ***********</code></pre><p>可以成功登录,然后修改密码：</p><pre><code>1.mysql&gt;update mysql.user set authentication_string=password(&#39;新密码放到这&#39;) where user=&#39;root&#39; and Host = &#39;localhost&#39;;2.mysql&gt;update mysql.user set plugin=&quot;mysql_native_password&quot;;3.mysql&gt;flush privileges;4.mysql&gt;quit5.$sudo service mysql restart</code></pre><p>然后就可以使用你设置的root密码登录root账户</p><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://www.linuxidc.com/Linux/2017-05/143864.htm" target="_blank" rel="noopener">Ubuntu 16.04 上安装 MySQL 5.7 教程</a><br><a href="https://blog.csdn.net/weixin_42353109/article/details/81431051" target="_blank" rel="noopener">Ubuntu下MySQL5.7初始密码修改（附：Windows下MySQL8.0.11找出初始密码）</a></p>]]></content>
+      
+      
       <categories>
           
-          <category> Markdown </category>
+          <category> 学习笔记 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Typora </tag>
+            <tag> 笔记 </tag>
             
-            <tag> Markdown </tag>
+            <tag> Ubuntu </tag>
             
         </tags>
       
@@ -35,7 +48,7 @@
       <link href="/2019/03/28/hello-world/"/>
       <url>/2019/03/28/hello-world/</url>
       
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
       
       
       
