@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://jenkiny.github.io/"/>
-  <updated>2019-04-05T09:31:14.857Z</updated>
+  <updated>2019-04-05T09:33:38.094Z</updated>
   <id>http://jenkiny.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://jenkiny.github.io/2019/04/05/android-ji-cheng-bmobsdk-zhi-zi-dong-geng-xin/"/>
     <id>http://jenkiny.github.io/2019/04/05/android-ji-cheng-bmobsdk-zhi-zi-dong-geng-xin/</id>
     <published>2019-04-05T07:46:28.000Z</published>
-    <updated>2019-04-05T09:31:14.857Z</updated>
+    <updated>2019-04-05T09:33:38.094Z</updated>
     
     <summary type="html">
     
@@ -45,42 +45,6 @@
       <category term="Android" scheme="http://jenkiny.github.io/tags/Android/"/>
     
       <category term="BmobSDK" scheme="http://jenkiny.github.io/tags/BmobSDK/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>论学习</title>
-    <link href="http://jenkiny.github.io/2019/04/05/lun-xue-xi/"/>
-    <id>http://jenkiny.github.io/2019/04/05/lun-xue-xi/</id>
-    <published>2019-04-04T16:19:38.000Z</published>
-    <updated>2019-04-04T16:19:38.661Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>本站搭建过程</title>
-    <link href="http://jenkiny.github.io/2019/04/03/ben-zhan-da-jian-guo-cheng/"/>
-    <id>http://jenkiny.github.io/2019/04/03/ben-zhan-da-jian-guo-cheng/</id>
-    <published>2019-04-03T09:32:47.000Z</published>
-    <updated>2019-04-04T16:18:26.355Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;真是厉害&quot;&gt;&lt;a href=&quot;#真是厉害&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
     
   </entry>
   
@@ -114,20 +78,6 @@
   </entry>
   
   <entry>
-    <title>测试</title>
-    <link href="http://jenkiny.github.io/2019/04/02/ce-shi/"/>
-    <id>http://jenkiny.github.io/2019/04/02/ce-shi/</id>
-    <published>2019-04-02T03:54:42.000Z</published>
-    <updated>2019-04-02T03:54:42.823Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Ubuntu 18.04安装 Mysql5.7</title>
     <link href="http://jenkiny.github.io/2019/03/29/ubuntu-install-mysql5.7/"/>
     <id>http://jenkiny.github.io/2019/03/29/ubuntu-install-mysql5.7/</id>
@@ -153,28 +103,6 @@
       <category term="笔记" scheme="http://jenkiny.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
     
       <category term="Ubuntu" scheme="http://jenkiny.github.io/tags/Ubuntu/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://jenkiny.github.io/2019/03/28/hello-world/"/>
-    <id>http://jenkiny.github.io/2019/03/28/hello-world/</id>
-    <published>2019-03-28T14:32:42.566Z</published>
-    <updated>2019-03-28T14:32:42.570Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
-        
-      
-    
-    </summary>
-    
     
   </entry>
   
