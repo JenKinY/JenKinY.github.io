@@ -420,7 +420,7 @@
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 </li>
 </ol>
-<h3 id="3-初始化AppVersion表"><a href="#3-初始化AppVersion表" class="headerlink" title="3. 初始化AppVersion表"></a>3. 初始化AppVersion表</h3><p>​    在调试程序入口添加此语句，可自动在后台生成 <code>AppVersion</code>表:</p>
+<h3 id="3、-初始化AppVersion表"><a href="#3、-初始化AppVersion表" class="headerlink" title="3、 初始化AppVersion表"></a>3、 初始化AppVersion表</h3><p>​    在调试程序入口添加此语句，可自动在后台生成 <code>AppVersion</code>表:</p>
 <pre class="line-numbers language-java"><code class="language-java">    BmobUpdateAgent<span class="token punctuation">.</span><span class="token function">initAppVersion</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><code>使用此语句在后台生成AppVersion后应删除此语句，否则可能会在后台重复创建此表</code>**</p>
@@ -477,25 +477,21 @@
 "Please add Activity in AndroidManifest!"：请检查上述步骤中的Activity是否正确添加。
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="7、兼容Android7-0"><a href="#7、兼容Android7-0" class="headerlink" title="7、兼容Android7.0"></a>7、兼容Android7.0</h3><p>兼容了Android7.0中的FileProvider，具体用法如下：</p>
-<ol>
-<li><h5 id="在AndroidManifest-xml中的Application标签下添加如下内容"><a href="#在AndroidManifest-xml中的Application标签下添加如下内容" class="headerlink" title="在AndroidManifest.xml中的Application标签下添加如下内容:"></a>在AndroidManifest.xml中的Application标签下添加如下内容:</h5><pre><code>&lt;provider
-    android:name=&quot;android.support.v4.content.FileProvider&quot;
-    android:authorities=&quot;此处填写你应用的包名&quot;
-    android:exported=&quot;false&quot;
-    android:grantUriPermissions=&quot;true&quot;&gt;
-    &lt;meta-data
-        android:name=&quot;android.support.FILE_PROVIDER_PATHS&quot;
-        android:resource=&quot;@xml/file_paths&quot; /&gt;
-&lt;/provider&gt;
-</code></pre></li>
-</ol>
-<ol start="2">
-<li><h5 id="在res的xml目录下创建file-paths-xml文件，用来指定Apk文件下载的位置："><a href="#在res的xml目录下创建file-paths-xml文件，用来指定Apk文件下载的位置：" class="headerlink" title="在res的xml目录下创建file_paths.xml文件，用来指定Apk文件下载的位置："></a>在res的xml目录下创建file_paths.xml文件，用来指定Apk文件下载的位置：</h5><pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
-&lt;paths&gt;
-    &lt;external-path name=&quot;Download&quot; path=&quot;Download&quot;/&gt;
-&lt;/paths&gt;
-</code></pre></li>
-</ol>
+<h5 id="1-在AndroidManifest-xml中的Application标签下添加如下内容"><a href="#1-在AndroidManifest-xml中的Application标签下添加如下内容" class="headerlink" title="1.在AndroidManifest.xml中的Application标签下添加如下内容:"></a>1.在AndroidManifest.xml中的Application标签下添加如下内容:</h5><pre class="line-numbers language-xml"><code class="language-xml">   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>provider</span>
+       <span class="token attr-name"><span class="token namespace">android:</span>name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>android.support.v4.content.FileProvider<span class="token punctuation">"</span></span>
+       <span class="token attr-name"><span class="token namespace">android:</span>authorities</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>此处填写你应用的包名<span class="token punctuation">"</span></span>
+       <span class="token attr-name"><span class="token namespace">android:</span>exported</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>false<span class="token punctuation">"</span></span>
+       <span class="token attr-name"><span class="token namespace">android:</span>grantUriPermissions</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta-data</span>
+           <span class="token attr-name"><span class="token namespace">android:</span>name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>android.support.FILE_PROVIDER_PATHS<span class="token punctuation">"</span></span>
+           <span class="token attr-name"><span class="token namespace">android:</span>resource</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>@xml/file_paths<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>provider</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h5 id="2-在res的xml目录下创建file-paths-xml文件，用来指定Apk文件下载的位置："><a href="#2-在res的xml目录下创建file-paths-xml文件，用来指定Apk文件下载的位置：" class="headerlink" title="2.在res的xml目录下创建file_paths.xml文件，用来指定Apk文件下载的位置："></a>2.在res的xml目录下创建file_paths.xml文件，用来指定Apk文件下载的位置：</h5><pre class="line-numbers language-xml"><code class="language-xml">   <span class="token prolog">&lt;?xml version="1.0" encoding="utf-8"?></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>paths</span><span class="token punctuation">></span></span>
+       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>external-path</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Download<span class="token punctuation">"</span></span> <span class="token attr-name">path</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Download<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>paths</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="8、其他更新方式"><a href="#8、其他更新方式" class="headerlink" title="8、其他更新方式"></a>8、其他更新方式</h3><p>​    除了在快速入门中提到的自动更新之外，Bmob自动更新SDK还支持另外两种场景：手动更新、静默更新。还提供很多自定义功能，本文只记录 自动更新-强制更新的方式，更多的详见<a href="http://doc.bmob.cn/data/android/auto_update/" target="_blank" rel="noopener">Bmob官方文档-自动更新</a></p>
 <h3 id="9、所遇到的问题"><a href="#9、所遇到的问题" class="headerlink" title="9、所遇到的问题"></a>9、所遇到的问题</h3><p>按照官方文档进行上面的一番操作后，本应该相安无事，但是生活有时候总是要捉弄一下你</p>
 <p>，代码也是，下面简述一下在集成自动更新时间所遇到的几个问题：</p>
