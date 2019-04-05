@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://jenkiny.github.io/"/>
-  <updated>2019-04-02T03:54:42.823Z</updated>
+  <updated>2019-04-05T09:31:14.857Z</updated>
   <id>http://jenkiny.github.io/</id>
   
   <author>
@@ -15,6 +15,103 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Android集成BmobSDK之自动更新</title>
+    <link href="http://jenkiny.github.io/2019/04/05/android-ji-cheng-bmobsdk-zhi-zi-dong-geng-xin/"/>
+    <id>http://jenkiny.github.io/2019/04/05/android-ji-cheng-bmobsdk-zhi-zi-dong-geng-xin/</id>
+    <published>2019-04-05T07:46:28.000Z</published>
+    <updated>2019-04-05T09:31:14.857Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;说明：&lt;/p&gt;
+&lt;p&gt;​    AndroidStudio:V3.3.2&lt;/p&gt;
+&lt;p&gt;​    targetSdkVersion:28&lt;/p&gt;
+&lt;p&gt;​    BmobSDK:V3.7.2&lt;/p&gt;
+&lt;p&gt;​    官方文档：&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="Android" scheme="http://jenkiny.github.io/categories/Android/"/>
+    
+    
+      <category term="Android" scheme="http://jenkiny.github.io/tags/Android/"/>
+    
+      <category term="BmobSDK" scheme="http://jenkiny.github.io/tags/BmobSDK/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>论学习</title>
+    <link href="http://jenkiny.github.io/2019/04/05/lun-xue-xi/"/>
+    <id>http://jenkiny.github.io/2019/04/05/lun-xue-xi/</id>
+    <published>2019-04-04T16:19:38.000Z</published>
+    <updated>2019-04-04T16:19:38.661Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>本站搭建过程</title>
+    <link href="http://jenkiny.github.io/2019/04/03/ben-zhan-da-jian-guo-cheng/"/>
+    <id>http://jenkiny.github.io/2019/04/03/ben-zhan-da-jian-guo-cheng/</id>
+    <published>2019-04-03T09:32:47.000Z</published>
+    <updated>2019-04-04T16:18:26.355Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;真是厉害&quot;&gt;&lt;a href=&quot;#真是厉害&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>SpringBoot Learn01</title>
+    <link href="http://jenkiny.github.io/2019/04/03/springboot-learn01/"/>
+    <id>http://jenkiny.github.io/2019/04/03/springboot-learn01/</id>
+    <published>2019-04-03T07:16:45.000Z</published>
+    <updated>2019-04-03T09:31:45.268Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;​    &lt;/p&gt;
+&lt;h2 id=&quot;编写过程&quot;&gt;&lt;a href=&quot;#编写过程&quot; class=&quot;headerlink&quot; title=&quot;编写过程&quot;&gt;&lt;/a&gt;编写过程&lt;/h2&gt;&lt;p&gt;Entity
+        
+      
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="http://jenkiny.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="笔记" scheme="http://jenkiny.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="SpringBoot" scheme="http://jenkiny.github.io/tags/SpringBoot/"/>
+    
+  </entry>
   
   <entry>
     <title>测试</title>
@@ -32,8 +129,8 @@
   
   <entry>
     <title>Ubuntu 18.04安装 Mysql5.7</title>
-    <link href="http://jenkiny.github.io/2019/03/29/test/"/>
-    <id>http://jenkiny.github.io/2019/03/29/test/</id>
+    <link href="http://jenkiny.github.io/2019/03/29/ubuntu-install-mysql5.7/"/>
+    <id>http://jenkiny.github.io/2019/03/29/ubuntu-install-mysql5.7/</id>
     <published>2019-03-28T16:06:01.000Z</published>
     <updated>2019-04-02T03:34:44.797Z</updated>
     

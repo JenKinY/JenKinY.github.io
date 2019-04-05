@@ -4,10 +4,10 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Ubuntu 18.04安装 Mysql5.7, Skyzc">
-    <meta name="description" content="出现：ERROR 1045 (28000): Access denied for user ‘root‘@’localhost’ 
-安装过程##1. 输入以下命令进行安装MySQL5.7
-1. sudo apt-get install my">
+    <meta name="keywords" content="SpringBoot Learn01, Skyzc">
+    <meta name="description" content="​    
+编写过程Entity 实体层=&amp;gt;Dao层=&amp;gt;Service层=&amp;gt;Controller层
+">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -15,7 +15,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Ubuntu 18.04安装 Mysql5.7 | Skyzc</title>
+    <title>SpringBoot Learn01 | Skyzc</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/bitbug_favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -200,13 +200,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Ubuntu 18.04安装 Mysql5.7
+                        SpringBoot Learn01
                     </div>
                 </div>
             </div>
@@ -321,8 +321,8 @@
                                 <span class="chip bg-color">笔记</span>
                             </a>
                         
-                            <a href="/tags/Ubuntu/" target="_blank">
-                                <span class="chip bg-color">Ubuntu</span>
+                            <a href="/tags/SpringBoot/" target="_blank">
+                                <span class="chip bg-color">SpringBoot</span>
                             </a>
                         
                     </div>
@@ -345,14 +345,14 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-03-29
+                    2019-04-03
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        392
+                        17
                     </div>
                     
 
@@ -375,35 +375,8 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>出现：ERROR 1045 (28000): Access denied for user ‘root‘@’localhost’ </p>
-<h2 id="安装过程"><a href="#安装过程" class="headerlink" title="安装过程"></a>安装过程</h2><p>##1. 输入以下命令进行安装MySQL5.7</p>
-<pre><code>1. sudo apt-get install mysql-server
-2. apt-get isntall mysql-client
-3. sudo apt-get install libmysqlclient-dev
-</code></pre><p>安装过程中会提示设置密码什么的，注意设置了不要忘了，安装完成之后可以使用如下命令来检查是否安装成功：</p>
-<pre><code>sudo netstat -tap | grep mysql
-</code></pre><p>通过上述命令检查之后，如果看到有mysql 的socket处于 listen 状态则表示安装成功。<br>登陆mysql数据库可以通过如下命令：</p>
-<pre><code>mysql -u root -p
-</code></pre><p>-u 表示选择登陆的用户名， -p 表示登陆的用户密码，上面命令输入之后会提示输入密码，此时输入密码就可以登录到mysql。</p>
-<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>在我安装过程中，并未提示我设置root密码。安装完成后无法登陆，不带密码也无法登录。<br>在安装过程中会设置初始密码</p>
-<pre><code>sudo vim /etc/mysql/debian.cnf
-</code></pre><p>然后使用其中的</p>
-<pre><code>user = debin-sys-maint
-password = *********
-</code></pre><p>这个账户登录：</p>
-<pre><code>mysql -u debin-sys-maint -p  ***********
-</code></pre><p>可以成功登录,然后修改密码：</p>
-<pre><code>1.mysql&gt;update mysql.user set authentication_string=password(&#39;新密码放到这&#39;) where user=&#39;root&#39; and Host = &#39;localhost&#39;;
-
-2.mysql&gt;update mysql.user set plugin=&quot;mysql_native_password&quot;;
-
-3.mysql&gt;flush privileges;
-
-4.mysql&gt;quit
-
-5.$sudo service mysql restart
-</code></pre><p>然后就可以使用你设置的root密码登录root账户</p>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://www.linuxidc.com/Linux/2017-05/143864.htm" target="_blank" rel="noopener">Ubuntu 16.04 上安装 MySQL 5.7 教程</a><br><a href="https://blog.csdn.net/weixin_42353109/article/details/81431051" target="_blank" rel="noopener">Ubuntu下MySQL5.7初始密码修改（附：Windows下MySQL8.0.11找出初始密码）</a></p>
+                <p>​    </p>
+<h2 id="编写过程"><a href="#编写过程" class="headerlink" title="编写过程"></a>编写过程</h2><p>Entity 实体层=&gt;Dao层=&gt;Service层=&gt;Controller层</p>
 
             </div>
             <hr>
@@ -551,7 +524,7 @@ password = *********
                     </span>
                     <a href="http://jenkiny.github.io" class="b-link-green">Skyzc</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/03/29/test/" class="b-link-green">Ubuntu 18.04安装 Mysql5.7</a>
+                    <a href="/2019/04/03/springboot-learn01/" class="b-link-green">SpringBoot Learn01</a>
                 </p>
             </div>
         </div>
@@ -576,20 +549,20 @@ password = *********
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/04/02/ce-shi/">
+                <a href="/2019/04/03/ben-zhan-da-jian-guo-cheng/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="测试">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="本站搭建过程">
                         
-                        <span class="card-title">测试</span>
+                        <span class="card-title">本站搭建过程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary"></div>
+                    <div class="summary">真是厉害</div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-02
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-03
                         </span>
                         <span class="publish-author">
                             
@@ -609,20 +582,20 @@ password = *********
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/03/28/hello-world/">
+                <a href="/2019/04/02/ce-shi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="测试">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">测试</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex</div>
+                    <div class="summary"></div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-03-28
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-02
                             </span>
                         <span class="publish-author">
                             
@@ -785,7 +758,7 @@ password = *********
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">465</span>
+                <span class="white-color">2.4k</span>
             
 
             
