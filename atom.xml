@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://jenkiny.github.io/"/>
-  <updated>2019-04-05T09:57:55.052Z</updated>
+  <updated>2019-04-08T01:41:39.912Z</updated>
   <id>http://jenkiny.github.io/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>renren-security学习笔记01</title>
+    <link href="http://jenkiny.github.io/2019/04/08/renren-security-xue-xi-bi-ji-01/"/>
+    <id>http://jenkiny.github.io/2019/04/08/renren-security-xue-xi-bi-ji-01/</id>
+    <published>2019-04-08T01:29:57.000Z</published>
+    <updated>2019-04-08T01:41:39.912Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;说明：&quot;&gt;&lt;a href=&quot;#说明：&quot; class=&quot;headerlink&quot; title=&quot;说明：&quot;&gt;&lt;/a&gt;说明：&lt;/h3&gt;&lt;p&gt;​    记录自己学习 &lt;a href=&quot;https://gitee.com/renrenio/renren-security&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="后端开发" scheme="http://jenkiny.github.io/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="java" scheme="http://jenkiny.github.io/tags/java/"/>
+    
+      <category term="Springboot" scheme="http://jenkiny.github.io/tags/Springboot/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Android集成BmobSDK之自动更新</title>
     <link href="http://jenkiny.github.io/2019/04/05/android-ji-cheng-bmobsdk-zhi-zi-dong-geng-xin/"/>
     <id>http://jenkiny.github.io/2019/04/05/android-ji-cheng-bmobsdk-zhi-zi-dong-geng-xin/</id>
-    <published>2019-04-05T07:46:28.000Z</published>
-    <updated>2019-04-05T09:57:55.052Z</updated>
+    <published>2019-04-05T07:39:48.000Z</published>
+    <updated>2019-04-05T10:26:48.389Z</updated>
     
     <summary type="html">
     
@@ -30,10 +58,10 @@
         
         
           &lt;p&gt;说明：&lt;/p&gt;
-&lt;p&gt;​    AndroidStudio:V3.3.2&lt;/p&gt;
-&lt;p&gt;​    targetSdkVersion:28&lt;/p&gt;
-&lt;p&gt;​    BmobSDK:V3.7.2&lt;/p&gt;
-&lt;p&gt;​    官方文档：&lt;a
+&lt;p&gt; AndroidStudio:V3.3.2&lt;/p&gt;
+&lt;p&gt; targetSdkVersion:28&lt;/p&gt;
+&lt;p&gt; BmobSDK:V3.7.2&lt;/p&gt;
+&lt;p&gt; 官方文档：&lt;a
         
       
     

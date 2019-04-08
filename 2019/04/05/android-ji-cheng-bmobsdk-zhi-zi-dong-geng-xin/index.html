@@ -6,11 +6,11 @@
     <meta charset="utf-8">
     <meta name="keywords" content="Android集成BmobSDK之自动更新, Skyzc">
     <meta name="description" content="说明：
-​    AndroidStudio:V3.3.2
-​    targetSdkVersion:28
-​    BmobSDK:V3.7.2
-​    官方文档：Bmob文档中心-自动更新
-1、添加资源文件下载SDK提供的res文件">
+ AndroidStudio:V3.3.2
+ targetSdkVersion:28
+ BmobSDK:V3.7.2
+ 官方文档：Bmob文档中心-自动更新
+1、添加资源文件下载SDK提供的res文件夹拷入工程目录下，和工程本身re">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -379,10 +379,10 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>说明：</p>
-<p>​    AndroidStudio:V3.3.2</p>
-<p>​    targetSdkVersion:28</p>
-<p>​    BmobSDK:V3.7.2</p>
-<p>​    官方文档：<a href="http://doc.bmob.cn/data/android/auto_update/" target="_blank" rel="noopener">Bmob文档中心-自动更新</a></p>
+<p> AndroidStudio:V3.3.2</p>
+<p> targetSdkVersion:28</p>
+<p> BmobSDK:V3.7.2</p>
+<p> 官方文档：<a href="http://doc.bmob.cn/data/android/auto_update/" target="_blank" rel="noopener">Bmob文档中心-自动更新</a></p>
 <h3 id="1、添加资源文件"><a href="#1、添加资源文件" class="headerlink" title="1、添加资源文件"></a>1、添加资源文件</h3><p>下载SDK提供的res文件夹拷入工程目录下，和工程本身res目录合并。</p>
 <p><a href="https://www.bmob.cn/static/res.zip" target="_blank" rel="noopener">BmobSDK自动更新所需资源文件</a></p>
 <p>这里需要注意的是：</p>
@@ -420,12 +420,12 @@
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 </li>
 </ol>
-<h3 id="3、-初始化AppVersion表"><a href="#3、-初始化AppVersion表" class="headerlink" title="3、 初始化AppVersion表"></a>3、 初始化AppVersion表</h3><p>​    在调试程序入口添加此语句，可自动在后台生成 <code>AppVersion</code>表:</p>
+<h3 id="3、-初始化AppVersion表"><a href="#3、-初始化AppVersion表" class="headerlink" title="3、 初始化AppVersion表"></a>3、 初始化AppVersion表</h3><p> 在调试程序入口添加此语句，可自动在后台生成 <code>AppVersion</code>表:</p>
 <pre class="line-numbers language-java"><code class="language-java">    BmobUpdateAgent<span class="token punctuation">.</span><span class="token function">initAppVersion</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p><code>使用此语句在后台生成AppVersion后应删除此语句，否则可能会在后台重复创建此表</code>**</p>
-<p>​    <strong>ps:</strong></p>
-<p>​        <strong> 若执行此语句后，在后台并未发现生成AppVersion表，可以尝试清除该应用数据，并再次打开 ，若还是无法生成可以手动创建此表，不过要注意个字段一定不要填错，具体字段可以跳到下面第5步查看或者查询<a href="http://doc.bmob.cn/data/android/auto_update/#5apkapkurl" target="_blank" rel="noopener">官方文档-AppVersion各字段说明</a></strong></p>
+<p><code>使用此语句在后台生成AppVersion后应删除此语句，否则可能会在后台重复创建此表</code></p>
+<p> <strong>ps:</strong></p>
+<p> <strong>若执行此语句后，在后台并未发现生成AppVersion表，可以尝试清除该应用数据，并再次打开 ，若还是无法生成可以手动创建此表，不过要注意个字段一定不要填错，具体字段可以跳到下面第5步查看或者查询官方文档-AppVersion各字段说明</strong></p>
 <h3 id="4、调用自动更新接口"><a href="#4、调用自动更新接口" class="headerlink" title="4、调用自动更新接口"></a>4、调用自动更新接口</h3><p>最常见的自动更新模式是：当用户进入应用首页后，如果处于wifi环境则检测更新，如果有更新，弹出对话框提示有新版本，用户点选更新开始下载更新。实现的方法是，在应用程序入口Activity里的<code>OnCreate()</code>方法中调用如下代码：</p>
 <pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onCreate</span><span class="token punctuation">(</span>Bundle  savedInstanceState<span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">onCreate</span><span class="token punctuation">(</span>savedInstanceState<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -437,7 +437,7 @@
 </ol>
 <pre class="line-numbers language-java"><code class="language-java">BmobUpdateAgent<span class="token punctuation">.</span><span class="token function">setUpdateOnlyWifi</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<ol start="2">
+<ol>
 <li>如果你发现调用update方法无反应，可使用下面<code>自定义功能</code>中的<code>监听检测更新的结果</code>提到的方法来监听自动更新的结果,具体如下：</li>
 </ol>
 <pre class="line-numbers language-java"><code class="language-java">BmobUpdateAgent<span class="token punctuation">.</span><span class="token function">setUpdateListener</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">BmobUpdateListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -454,17 +454,17 @@
 <h4 id="忽略版本更新"><a href="#忽略版本更新" class="headerlink" title="忽略版本更新"></a>忽略版本更新</h4><p>SDK中为自动更新方式提供了<code>忽略版本更新</code>功能，当用户勾选”忽略该版“选项时，再次调用<code>BmobUpdateAgent.update(context)</code>则不再出现版本更新对话框。</p>
 <p><strong>注：强制更新和忽略版本更新只支持自动更新方式。</strong></p>
 <h3 id="5、上传APK文件或填写apk文件的url地址"><a href="#5、上传APK文件或填写apk文件的url地址" class="headerlink" title="5、上传APK文件或填写apk文件的url地址"></a>5、上传APK文件或填写apk文件的url地址</h3><p>初始化AppVersion表成功后，开发者在管理后台的<code>数据浏览</code>页中就可以看见AppVersion表了：</p>
-<p><img src="http://skyzc.oss-cn-shenzhen.aliyuncs.com/MyBlog/Bmob%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0/BmobAppVersion%E8%A1%A8.png" alt="AppVersion表"></p>
+<p><img src="https://skyzc.oss-cn-shenzhen.aliyuncs.com/MyBlog/Bmob%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0/BmobAppVersion%E8%A1%A8.png" alt="AppVersion表"></p>
 <p>新建的表没有数据的，表中个字段如下图：</p>
-<p><img src="http://skyzc.oss-cn-shenzhen.aliyuncs.com/MyBlog/Bmob%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0/AppVersion%E5%90%84%E5%AD%97%E6%AE%B5.png" alt="AppVersion各字段"></p>
+<p><strong><img src="https://skyzc.oss-cn-shenzhen.aliyuncs.com/MyBlog/Bmob%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0/AppVersion%E5%90%84%E5%AD%97%E6%AE%B5.png" alt="AppVersion各字段"></strong></p>
 <p>我们只关注上图中框选的字段即可，其中：</p>
 <ul>
 <li><p><code>target_size</code> 需要填写我们安装包的实际占用字节(Windows下右键程序包&gt;属性&gt;大小，注意不是占用大小)，填入数值即可，不用添加单位</p>
-<p><img src="http://skyzc.oss-cn-shenzhen.aliyuncs.com/MyBlog/Bmob%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0/APKSize.png" alt="target_size"></p>
+<p><img src="https://skyzc.oss-cn-shenzhen.aliyuncs.com/MyBlog/Bmob%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0/APKSize.png" alt="target_size"></p>
 </li>
 <li><p><code>version_i</code> 对应我们项目的 <em>versionCode</em>若要更新，我们的更新包的<code>version_i</code> 值就要大于旧版本的<em>versionCode</em>的值</p>
 </li>
-<li><p><code>path</code> 和 <code>android_url</code> 可以二选一，两者都有的话默认优先选择 <code>android_url</code> </p>
+<li><p><code>path</code> 和 <code>android_url</code> 可以二选一，两者都有的话默认优先选择 <code>android_url</code></p>
 </li>
 </ul>
 <h3 id="6、集成检测"><a href="#6、集成检测" class="headerlink" title="6、集成检测"></a>6、集成检测</h3><p>SDK中默认开启了集成检测功能，在调用任意的更新接口后，我们将替您自动检查上述集成过程中2、3两个步骤是否被正确完成。 如果正确完成不会出现任何提示，否则会以如下的toast提示您。</p>
@@ -492,13 +492,13 @@
        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>external-path</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Download<span class="token punctuation">"</span></span> <span class="token attr-name">path</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Download<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>paths</span><span class="token punctuation">></span></span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="8、其他更新方式"><a href="#8、其他更新方式" class="headerlink" title="8、其他更新方式"></a>8、其他更新方式</h3><p>​    除了在快速入门中提到的自动更新之外，Bmob自动更新SDK还支持另外两种场景：手动更新、静默更新。还提供很多自定义功能，本文只记录 自动更新-强制更新的方式，更多的详见<a href="http://doc.bmob.cn/data/android/auto_update/" target="_blank" rel="noopener">Bmob官方文档-自动更新</a></p>
+<h3 id="8、其他更新方式"><a href="#8、其他更新方式" class="headerlink" title="8、其他更新方式"></a>8、其他更新方式</h3><p> 除了在快速入门中提到的自动更新之外，Bmob自动更新SDK还支持另外两种场景：手动更新、静默更新。还提供很多自定义功能，本文只记录 自动更新-强制更新的方式，更多的详见<a href="http://doc.bmob.cn/data/android/auto_update/" target="_blank" rel="noopener">Bmob官方文档-自动更新</a></p>
 <h3 id="9、所遇到的问题"><a href="#9、所遇到的问题" class="headerlink" title="9、所遇到的问题"></a>9、所遇到的问题</h3><p>按照官方文档进行上面的一番操作后，本应该相安无事，但是生活有时候总是要捉弄一下你</p>
 <p>，代码也是，下面简述一下在集成自动更新时间所遇到的几个问题：</p>
-<h4 id="1-配置完成后，进入页面闪退，并报错："><a href="#1-配置完成后，进入页面闪退，并报错：" class="headerlink" title="1.配置完成后，进入页面闪退，并报错："></a>1.配置完成后，进入页面闪退，并报错：</h4><p><img src="http://skyzc.oss-cn-shenzhen.aliyuncs.com/MyBlog/Bmob%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0/%E6%9B%B4%E6%96%B0%E5%87%BA%E9%94%99.png" alt="更新报错"></p>
+<h4 id="1-配置完成后，进入页面闪退，并报错："><a href="#1-配置完成后，进入页面闪退，并报错：" class="headerlink" title="1.配置完成后，进入页面闪退，并报错："></a>1.配置完成后，进入页面闪退，并报错：</h4><p><img src="https://skyzc.oss-cn-shenzhen.aliyuncs.com/MyBlog/Bmob%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0/%E6%9B%B4%E6%96%B0%E5%87%BA%E9%94%99.png" alt="更新报错"></p>
 <p>当时非常遗憾，在网上查询了一番也没找到到底是什么错，最后在官方用户群里了解到，只需要将我们的项目库升级成androidx即可，具体原因没有继续深入研究。</p>
 <p>升级 <code>support</code> 到 <code>androidx</code>：AndroidStudio 3.2 以上添加了一件迁移功能: <code>Refactor</code> -&gt; <code>Migrate to AndroidX</code>,会提示你备份，一点要备份，万一翻车就惨了，你会拥有一大屏的红线 =_=</p>
-<h4 id="2-点击更新按钮，但是下载失败："><a href="#2-点击更新按钮，但是下载失败：" class="headerlink" title="2.点击更新按钮，但是下载失败："></a>2.点击更新按钮，但是下载失败：</h4><p>​    多机型(真机)测试后，发现部分手机可以，部分手机失败，检查了一番推理应该是权限问题。就想到了是储存权限</p>
+<h4 id="2-点击更新按钮，但是下载失败："><a href="#2-点击更新按钮，但是下载失败：" class="headerlink" title="2.点击更新按钮，但是下载失败："></a>2.点击更新按钮，但是下载失败：</h4><p> 多机型(真机)测试后，发现部分手机可以，部分手机失败，检查了一番推理应该是权限问题。就想到了是储存权限</p>
 <pre class="line-numbers language-xml"><code class="language-xml"><span class="token comment" spellcheck="true">&lt;!-- 允许将下载的apk保存到sd卡中 --></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>uses-permission</span> <span class="token attr-name"><span class="token namespace">android:</span>name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>android.permission.WRITE_EXTERNAL_STORAGE<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
@@ -673,51 +673,48 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
-            </div>
+                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/04/05/android-ji-cheng-bmobsdk-zhi-zi-dong-geng-xin/">
+                <a href="/2019/04/08/renren-security-xue-xi-bi-ji-01/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="Android集成BmobSDK之自动更新">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="renren-security学习笔记01">
                         
-                        <span class="card-title">Android集成BmobSDK之自动更新</span>
+                        <span class="card-title">renren-security学习笔记01</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">说明：
-​    AndroidStudio:V3.3.2
-​    targetSdkVersion:28
-​    BmobSDK:V3.7.2
-​    官方文档：Bmob文档中心-自动更新
-1、添加资源文件下载SDK提供的res文件</div>
+                    <div class="summary">说明：​    记录自己学习 renrennnn-security 的一些步骤以及踩的一些坑。
+​    环境：
+        JDK:1.8
+        Mysql:5.7
+        renren-security: V4.0</div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-05
-                            </span>
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-08
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Android/" class="post-category" target="_blank">
-                                    Android
+                            <a href="/categories/后端开发/" class="post-category" target="_blank">
+                                    后端开发
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Android/" target="_blank">
-                        <span class="chip bg-color">Android</span>
+                    <a href="/tags/java/" target="_blank">
+                        <span class="chip bg-color">java</span>
                     </a>
                     
-                    <a href="/tags/BmobSDK/" target="_blank">
-                        <span class="chip bg-color">BmobSDK</span>
+                    <a href="/tags/Springboot/" target="_blank">
+                        <span class="chip bg-color">Springboot</span>
                     </a>
                     
                 </div>
@@ -925,7 +922,7 @@
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">2.3k</span>
+                <span class="white-color">2.4k</span>
             
 
             
