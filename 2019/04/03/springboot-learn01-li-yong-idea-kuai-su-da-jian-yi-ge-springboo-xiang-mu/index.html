@@ -4,10 +4,12 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="SpringBoot Learn01, Skyzc">
-    <meta name="description" content="​    
-编写过程Entity 实体层=&amp;gt;Dao层=&amp;gt;Service层=&amp;gt;Controller层
-">
+    <meta name="keywords" content="SpringBoot-Learn01利用Idea快速搭建一个Springboo项目, Skyzc">
+    <meta name="description" content="Preface:    IDEA:2018.3.6
+    JDK:1.8
+
+​    参考：How2j-Springboot入门-idea 推荐这个网站，教程很详细而且都有实例代码提供下载。
+MainBody:1.利用 Spring In">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -15,7 +17,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>SpringBoot Learn01 | Skyzc</title>
+    <title>SpringBoot-Learn01利用Idea快速搭建一个Springboo项目 | Skyzc</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/bitbug_favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -200,13 +202,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        SpringBoot Learn01
+                        SpringBoot-Learn01利用Idea快速搭建一个Springboo项目
                     </div>
                 </div>
             </div>
@@ -216,10 +218,99 @@
 
 
 
-<main class="container content">
+<main class="post-container content">
 
     
-    <!-- 文章内容详情 -->
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #toc-content .is-active-link::before {
+        background-color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 20px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
@@ -227,10 +318,6 @@
                 <div class="col s7">
                     
                     <div class="article-tag">
-                        
-                            <a href="/tags/笔记/" target="_blank">
-                                <span class="chip bg-color">笔记</span>
-                            </a>
                         
                             <a href="/tags/SpringBoot/" target="_blank">
                                 <span class="chip bg-color">SpringBoot</span>
@@ -263,7 +350,7 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        17
+                        252
                     </div>
                     
 
@@ -286,8 +373,26 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>​    </p>
-<h2 id="编写过程"><a href="#编写过程" class="headerlink" title="编写过程"></a>编写过程</h2><p>Entity 实体层=&gt;Dao层=&gt;Service层=&gt;Controller层</p>
+                <h2 id="Preface"><a href="#Preface" class="headerlink" title="Preface:"></a>Preface:</h2><pre class="line-numbers language-xml"><code class="language-xml">    IDEA:2018.3.6
+    JDK:1.8
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>​    参考：<a href="http://how2j.cn/k/springboot/springboot-idea/1641.html" target="_blank" rel="noopener">How2j-Springboot入门-idea</a> 推荐这个网站，教程很详细而且都有实例代码提供下载。</p>
+<h2 id="MainBody"><a href="#MainBody" class="headerlink" title="MainBody:"></a>MainBody:</h2><h3 id="1-利用-Spring-Initializr-新建项目："><a href="#1-利用-Spring-Initializr-新建项目：" class="headerlink" title="1.利用 Spring Initializr 新建项目："></a>1.利用 Spring Initializr 新建项目：</h3><p><img src="http://skyzc.oss-cn-shenzhen.aliyuncs.com/MyBlog/Springboot-quicekStart/NewProject01.png" alt="SpringInitializr"></p>
+<p><img src="http://skyzc.oss-cn-shenzhen.aliyuncs.com/MyBlog/Springboot-quicekStart/projectMetadata02.png" alt="ProjectMetadata"></p>
+<h3 id="2-选择项目依赖"><a href="#2-选择项目依赖" class="headerlink" title="2.选择项目依赖:"></a>2.选择项目依赖:</h3><p><img src="http://skyzc.oss-cn-shenzhen.aliyuncs.com/MyBlog/Springboot-quicekStart/Dependencies03.png" alt="Dependencies"></p>
+<p>此处暂时无需其他依赖，只需勾选web即可。然后再次填写基本信息:</p>
+<p>(此部分圆圈可以不用管，前面已经填写，此处只是为了查看)</p>
+<p><img src="http://skyzc.oss-cn-shenzhen.aliyuncs.com/MyBlog/Springboot-quicekStart/ProjectMoreSetting04.png" alt="info"></p>
+<p>至此，项目基本环境配置已完成，等待Idea自动加载。</p>
+<h3 id="3-开启自动配置Maven依赖"><a href="#3-开启自动配置Maven依赖" class="headerlink" title="3.开启自动配置Maven依赖"></a>3.开启自动配置Maven依赖</h3><p><img src="http://skyzc.oss-cn-shenzhen.aliyuncs.com/MyBlog/Springboot-quicekStart/Enable%20auto05.png" alt="Enable Auto"></p>
+<p>开启之后，以后在pom.xml添加依赖后，Idea会给我们自动导入。</p>
+<h3 id="4-完成"><a href="#4-完成" class="headerlink" title="4.完成:"></a>4.完成:</h3><p>等待Idea加载完成后我们可以看到项目的基本架构</p>
+<p><img src="http://skyzc.oss-cn-shenzhen.aliyuncs.com/MyBlog/Springboot-quicekStart/all07.png" alt="all"></p>
+<p>此时可以查看项目的pom.xml，发现Springboot需要的基本依赖Idea已经给我们导入了</p>
+<h3 id="5-测试"><a href="#5-测试" class="headerlink" title="5.测试:"></a>5.测试:</h3><p>新建一个 controller包，在此包下新建一个 HelloController.java</p>
+<p><img src="http://skyzc.oss-cn-shenzhen.aliyuncs.com/MyBlog/Springboot-quicekStart/controller08.png" alt="Controller"></p>
+<p>运行我们项目的入口程序(***Application),打开浏览器<a href="http://localhost:8080/hello" target="_blank" rel="noopener">http://localhost:8080/hello</a>：</p>
+<p><img src="http://skyzc.oss-cn-shenzhen.aliyuncs.com/MyBlog/Springboot-quicekStart/show09.png" alt="show"></p>
 
             </div>
             <hr>
@@ -435,7 +540,7 @@
                     </span>
                     <a href="http://jenkiny.github.io" class="b-link-green">Skyzc</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/04/03/springboot-learn01/" class="b-link-green">SpringBoot Learn01</a>
+                    <a href="/2019/04/03/springboot-learn01-li-yong-idea-kuai-su-da-jian-yi-ge-springboo-xiang-mu/" class="b-link-green">SpringBoot-Learn01利用Idea快速搭建一个Springboo项目</a>
                 </p>
             </div>
         </div>
@@ -526,7 +631,7 @@
                 <div class="card-content article-content">
                     <div class="summary">出现：ERROR 1045 (28000): Access denied for user ‘root‘@’localhost’ 
 安装过程##1. 输入以下命令进行安装MySQL5.7
-1. sudo apt-get install my</div>
+sudo apt-get install mysql</div>
                     <div class="publish-info">
                             <span class="publish-date">
                                 <i class="fa fa-clock-o fa-fw icon-date"></i>2019-03-29
@@ -546,8 +651,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/笔记/" target="_blank">
-                        <span class="chip bg-color">笔记</span>
+                    <a href="/tags/学习笔记/" target="_blank">
+                        <span class="chip bg-color">学习笔记</span>
                     </a>
                     
                     <a href="/tags/Ubuntu/" target="_blank">
@@ -601,6 +706,99 @@
     });
 </script>
 
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="fa fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fa fa-list"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            // headingsOffset: -205,
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).slideUp(500);
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).slideDown(500);
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
     
 
 </main>
@@ -615,7 +813,7 @@
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">2.4k</span>
+                <span class="white-color">2.6k</span>
             
 
             
