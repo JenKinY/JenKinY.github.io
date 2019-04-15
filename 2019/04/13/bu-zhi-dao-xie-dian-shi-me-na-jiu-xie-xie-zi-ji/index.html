@@ -4,10 +4,11 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Ubuntu 18.04安装 Mysql5.7, Skyzc">
-    <meta name="description" content="出现：ERROR 1045 (28000): Access denied for user ‘root‘@’localhost’ 
-安装过程##1. 输入以下命令进行安装MySQL5.7
-sudo apt-get install mysql">
+    <meta name="keywords" content="不知道写点什么?那就写写自己, Skyzc">
+    <meta name="description" content="Hello World
+相信每个程序员对Hello’World肯定都会有特殊的情结吧^^
+
+一直想拥有一个属于自己的网站博客，公众号，这个想法在很早的时候就已经萌生在心底了。倒也不是懒，只是最近一直忙着别的事，回想两年来的确做过很多有意义的">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -15,7 +16,7 @@ sudo apt-get install mysql">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Ubuntu 18.04安装 Mysql5.7 | Skyzc</title>
+    <title>不知道写点什么?那就写写自己 | Skyzc</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/bitbug_favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -200,13 +201,13 @@ sudo apt-get install mysql">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Ubuntu 18.04安装 Mysql5.7
+                        不知道写点什么?那就写写自己
                     </div>
                 </div>
             </div>
@@ -317,12 +318,8 @@ sudo apt-get install mysql">
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/学习笔记/" target="_blank">
-                                <span class="chip bg-color">学习笔记</span>
-                            </a>
-                        
-                            <a href="/tags/Ubuntu/" target="_blank">
-                                <span class="chip bg-color">Ubuntu</span>
+                            <a href="/tags/随笔/" target="_blank">
+                                <span class="chip bg-color">随笔</span>
                             </a>
                         
                     </div>
@@ -333,8 +330,8 @@ sudo apt-get install mysql">
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/学习笔记/" class="post-category" target="_blank">
-                                学习笔记
+                            <a href="/categories/废话手册/" class="post-category" target="_blank">
+                                废话手册
                             </a>
                         
                     </div>
@@ -345,21 +342,21 @@ sudo apt-get install mysql">
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-03-29
+                    2019-04-13
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        377
+                        816
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        1 分
+                        2 分
                     </div>
                     
                 
@@ -375,43 +372,18 @@ sudo apt-get install mysql">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>出现：ERROR 1045 (28000): Access denied for user ‘root‘@’localhost’ </p>
-<h2 id="安装过程"><a href="#安装过程" class="headerlink" title="安装过程"></a>安装过程</h2><p>##1. 输入以下命令进行安装MySQL5.7</p>
-<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> mysql-server
-<span class="token function">apt-get</span> isntall mysql-client
-<span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> libmysqlclient-dev
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>安装过程中会提示设置密码什么的，注意设置了不要忘了，安装完成之后可以使用如下命令来检查是否安装成功：</p>
-<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">netstat</span> -tap <span class="token operator">|</span> <span class="token function">grep</span> mysql
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>通过上述命令检查之后，如果看到有mysql 的socket处于 listen 状态则表示安装成功。<br>登陆mysql数据库可以通过如下命令：</p>
-<pre class="line-numbers language-bash"><code class="language-bash">mysql -u root -p
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>-u 表示选择登陆的用户名， -p 表示登陆的用户密码，上面命令输入之后会提示输入密码，此时输入密码就可以登录到mysql。</p>
-<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>在我安装过程中，并未提示我设置root密码。安装完成后无法登陆，不带密码也无法登录。<br>在安装过程中会设置初始密码</p>
-<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">sudo</span> vim /etc/mysql/debian.cnf
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>然后使用其中的</p>
-<pre class="line-numbers language-bash"><code class="language-bash">user <span class="token operator">=</span> debin-sys-maint
-password <span class="token operator">=</span> *********
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>这个账户登录：</p>
-<pre class="line-numbers language-bash"><code class="language-bash">mysql -u debin-sys-maint -p  ***********
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>可以成功登录,然后修改密码：</p>
-<pre class="line-numbers language-bash"><code class="language-bash">1.mysql<span class="token operator">></span>update mysql.user <span class="token keyword">set</span> authentication_string<span class="token operator">=</span>password<span class="token punctuation">(</span><span class="token string">'新密码放到这'</span><span class="token punctuation">)</span> where user<span class="token operator">=</span><span class="token string">'root'</span> and Host <span class="token operator">=</span> <span class="token string">'localhost'</span><span class="token punctuation">;</span>
-
-2.mysql<span class="token operator">></span>update mysql.user <span class="token keyword">set</span> plugin<span class="token operator">=</span><span class="token string">"mysql_native_password"</span><span class="token punctuation">;</span>
-
-3.mysql<span class="token operator">></span>flush privileges<span class="token punctuation">;</span>
-
-4.mysql<span class="token operator">></span>quit
-
-5.<span class="token variable">$sudo</span> <span class="token function">service</span> mysql restart
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>然后就可以使用你设置的root密码登录root账户</p>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://www.linuxidc.com/Linux/2017-05/143864.htm" target="_blank" rel="noopener">Ubuntu 16.04 上安装 MySQL 5.7 教程</a><br><a href="https://blog.csdn.net/weixin_42353109/article/details/81431051" target="_blank" rel="noopener">Ubuntu下MySQL5.7初始密码修改（附：Windows下MySQL8.0.11找出初始密码）</a></p>
-
+                <h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a><strong>Hello World</strong></h2><blockquote>
+<p>相信每个程序员对Hello’World肯定都会有特殊的情结吧^^</p>
+</blockquote>
+<p>一直想拥有一个属于自己的网站博客，公众号，这个想法在很早的时候就已经萌生在心底了。倒也不是懒，只是最近一直忙着别的事，回想两年来的确做过很多有意义的事，但感觉都是零零散散的，没有完完全全系统的做完一件事。不久前抽空搭建了自己的博客，终于有一个地方可以自己写写文章，记录记录自己的生活以及写写学习笔记了，但在写过几篇文章之后，感觉又有点儿懈怠了，平时感觉有记录的东西，可是在下班后就忘记了，不想动了想着有空在写。啧啧，发现我果然有着严重的拖延症，这个拖延症真是会在特别的时间出来，吞噬我的身体和精神，今天终于受不了了，生活嘛，总得逼着自己做出什么事情来，打败自己内心的恶魔，所以便在这特别的夜晚，开始写下Skyzc的第一篇文章。</p>
+<p>最近深入研究了一下自媒体(wemedia)，这是在我博客搭建好之后一次偶尔的心中灵感，平时都是看别人博客，既然自己也开始写了，为何不把自己写的东西分享给更多的人，帮助更多的人呢，所以便开始了做自媒体的想法，微信公众号就是第一步。</p>
+<h2 id="习惯"><a href="#习惯" class="headerlink" title="习惯"></a><strong>习惯</strong></h2><p>我有一个习惯，就是决定的事情，一定会去做到，不然就浑身难受，虽然有时候会被拖延症干扰，但是这并不会阻碍我去做这件事，这种习惯在以前不是这么强烈，自从18年4月20日(<em>2018年4月20日瑞典著名DJ,A神avicii逝世，就在当时前几个星期看了他的2016年在UMF上的演出，就下定决心以后一定一定要去一次他的现场，当时在听到他去世时真的泪目了</em>)之后，便深知，有些事，一旦不及时去做，以后可能就再也没机会了；一些人，要是不去好好珍惜，可能就会永远失去。所以，乘还年轻，还有时间，去想去的地方，做自己想做的事，看自己想看的音乐会，好好爱自己爱的人。这个公众号就是来自我的一个突然想法，这篇文章的封面就是来自一场说走就走的旅行。</p>
+<p>whatever you do, do it a hundred percent. when you eat, eat like it’s your last meal.</p>
+<p>不管你做什么 都要做到极致，上班就认真工作笑就尽情大笑，吃东西时就像是最后一餐那样去享受。            –《绿皮书》</p>
+<p>这段话是我看完电影《绿皮书》后，记忆最深刻，最喜欢的一句话。我觉得生活真的应该如此，做什么都应该努力的做好，不要去浪费时间，浪费青春。相比整天的埋怨，更应该努力做好每一件事，去享受生活。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/aAFtlrRHdaaFvO2GdPYoDN7ClXJe0owROjthK1zeaBtFQknU2TP8Oec2ALyoQhriaZJMxNzGn6Bwl5eutDO8Dew/640?wx_fmt=gif&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1" alt="img"></p>
+<p>▲电影《绿皮书》片段</p>
+<h2 id="打算"><a href="#打算" class="headerlink" title="打算"></a>打算</h2>
             </div>
             <hr>
 
@@ -558,7 +530,7 @@ password <span class="token operator">=</span> *********
                     </span>
                     <a href="http://jenkiny.github.io" class="b-link-green">Skyzc</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/03/29/ubuntu-install-mysql5.7/" class="b-link-green">Ubuntu 18.04安装 Mysql5.7</a>
+                    <a href="/2019/04/13/bu-zhi-dao-xie-dian-shi-me-na-jiu-xie-xie-zi-ji/" class="b-link-green">不知道写点什么?那就写写自己</a>
                 </p>
             </div>
         </div>
@@ -583,31 +555,29 @@ password <span class="token operator">=</span> *********
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/04/03/springboot-learn01-li-yong-idea-kuai-su-da-jian-yi-ge-springboo-xiang-mu/">
+                <a href="/2019/04/15/shou-mo-shou-jiao-ni-kai-qi-mybatis-plus/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="SpringBoot-Learn01利用Idea快速搭建一个Springboo项目">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="手摸手教你MyBatis-plus">
                         
-                        <span class="card-title">SpringBoot-Learn01利用Idea快速搭建一个Springboo项目</span>
+                        <span class="card-title">手摸手教你MyBatis-plus</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">Preface:    IDEA:2018.3.6
-    JDK:1.8
-
-​    参考：How2j-Springboot入门-idea 推荐这个网站，教程很详细而且都有实例代码提供下载。
-MainBody:1.利用 Spring In</div>
+                    <div class="summary">PrefaceIntelliJ IDEA 2019.1 (Ultimate Edition)
+JRE: 1.8.0_202-release-1483-b39 amd64
+JVM: OpenJDK 64-Bit Server VM by Je</div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-03
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-15
                         </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/学习笔记/" class="post-category" target="_blank">
-                                    学习笔记
+                            <a href="/categories/后端开发/" class="post-category" target="_blank">
+                                    后端开发
                                 </a>
                             
                             
@@ -621,6 +591,10 @@ MainBody:1.利用 Spring In</div>
                         <span class="chip bg-color">SpringBoot</span>
                     </a>
                     
+                    <a href="/tags/MyBatis-Plus/" target="_blank">
+                        <span class="chip bg-color">MyBatis-Plus</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -629,48 +603,41 @@ MainBody:1.利用 Spring In</div>
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="fa fa-dot-circle-o"></i>
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/03/29/ubuntu-install-mysql5.7/">
+                <a href="/2019/04/11/avicii-sos/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Ubuntu 18.04安装 Mysql5.7">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="Avicii-SOS">
                         
-                        <span class="card-title">Ubuntu 18.04安装 Mysql5.7</span>
+                        <span class="card-title">Avicii-SOS</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">出现：ERROR 1045 (28000): Access denied for user ‘root‘@’localhost’ 
-安装过程##1. 输入以下命令进行安装MySQL5.7
-sudo apt-get install mysql</div>
+                    <div class="summary"></div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-03-29
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-11
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/学习笔记/" class="post-category" target="_blank">
-                                    学习笔记
+                            <a href="/categories/生活/" class="post-category" target="_blank">
+                                    生活
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/学习笔记/" target="_blank">
-                        <span class="chip bg-color">学习笔记</span>
-                    </a>
-                    
-                    <a href="/tags/Ubuntu/" target="_blank">
-                        <span class="chip bg-color">Ubuntu</span>
+                    <a href="/tags/电子音乐/" target="_blank">
+                        <span class="chip bg-color">电子音乐</span>
                     </a>
                     
                 </div>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://jenkiny.github.io/"/>
-  <updated>2019-04-08T02:41:08.196Z</updated>
+  <updated>2019-04-15T03:40:58.484Z</updated>
   <id>http://jenkiny.github.io/</id>
   
   <author>
@@ -15,6 +15,78 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>手摸手教你MyBatis-plus</title>
+    <link href="http://jenkiny.github.io/2019/04/15/shou-mo-shou-jiao-ni-kai-qi-mybatis-plus/"/>
+    <id>http://jenkiny.github.io/2019/04/15/shou-mo-shou-jiao-ni-kai-qi-mybatis-plus/</id>
+    <published>2019-04-15T02:04:36.000Z</published>
+    <updated>2019-04-15T03:40:58.484Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Preface&quot;&gt;&lt;a href=&quot;#Preface&quot; class=&quot;headerlink&quot; title=&quot;Preface&quot;&gt;&lt;/a&gt;Preface&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-yaml&quot;&gt;&lt;code
+        
+      
+    
+    </summary>
+    
+      <category term="后端开发" scheme="http://jenkiny.github.io/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="SpringBoot" scheme="http://jenkiny.github.io/tags/SpringBoot/"/>
+    
+      <category term="MyBatis-Plus" scheme="http://jenkiny.github.io/tags/MyBatis-Plus/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>不知道写点什么?那就写写自己</title>
+    <link href="http://jenkiny.github.io/2019/04/13/bu-zhi-dao-xie-dian-shi-me-na-jiu-xie-xie-zi-ji/"/>
+    <id>http://jenkiny.github.io/2019/04/13/bu-zhi-dao-xie-dian-shi-me-na-jiu-xie-xie-zi-ji/</id>
+    <published>2019-04-13T08:19:04.000Z</published>
+    <updated>2019-04-15T03:46:35.773Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Hello-World&quot;&gt;&lt;a href=&quot;#Hello-World&quot; class=&quot;headerlink&quot; title=&quot;Hello World&quot;&gt;&lt;/a&gt;&lt;strong&gt;Hello
+        
+      
+    
+    </summary>
+    
+      <category term="废话手册" scheme="http://jenkiny.github.io/categories/%E5%BA%9F%E8%AF%9D%E6%89%8B%E5%86%8C/"/>
+    
+    
+      <category term="随笔" scheme="http://jenkiny.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Avicii-SOS</title>
+    <link href="http://jenkiny.github.io/2019/04/11/avicii-sos/"/>
+    <id>http://jenkiny.github.io/2019/04/11/avicii-sos/</id>
+    <published>2019-04-11T11:05:12.000Z</published>
+    <updated>2019-04-12T06:06:10.091Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="生活" scheme="http://jenkiny.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="电子音乐" scheme="http://jenkiny.github.io/tags/%E7%94%B5%E5%AD%90%E9%9F%B3%E4%B9%90/"/>
+    
+  </entry>
   
   <entry>
     <title>renren-security学习笔记01</title>

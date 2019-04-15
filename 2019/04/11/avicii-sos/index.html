@@ -4,10 +4,8 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Ubuntu 18.04安装 Mysql5.7, Skyzc">
-    <meta name="description" content="出现：ERROR 1045 (28000): Access denied for user ‘root‘@’localhost’ 
-安装过程##1. 输入以下命令进行安装MySQL5.7
-sudo apt-get install mysql">
+    <meta name="keywords" content="Avicii-SOS, Skyzc">
+    <meta name="description" content="Avicii-SOS | Skyzc">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -15,7 +13,7 @@ sudo apt-get install mysql">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Ubuntu 18.04安装 Mysql5.7 | Skyzc</title>
+    <title>Avicii-SOS | Skyzc</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/bitbug_favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -200,13 +198,13 @@ sudo apt-get install mysql">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Ubuntu 18.04安装 Mysql5.7
+                        Avicii-SOS
                     </div>
                 </div>
             </div>
@@ -317,12 +315,8 @@ sudo apt-get install mysql">
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/学习笔记/" target="_blank">
-                                <span class="chip bg-color">学习笔记</span>
-                            </a>
-                        
-                            <a href="/tags/Ubuntu/" target="_blank">
-                                <span class="chip bg-color">Ubuntu</span>
+                            <a href="/tags/电子音乐/" target="_blank">
+                                <span class="chip bg-color">电子音乐</span>
                             </a>
                         
                     </div>
@@ -333,8 +327,8 @@ sudo apt-get install mysql">
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/学习笔记/" class="post-category" target="_blank">
-                                学习笔记
+                            <a href="/categories/生活/" class="post-category" target="_blank">
+                                生活
                             </a>
                         
                     </div>
@@ -345,14 +339,14 @@ sudo apt-get install mysql">
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-03-29
+                    2019-04-11
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        377
+                        0
                     </div>
                     
 
@@ -375,43 +369,7 @@ sudo apt-get install mysql">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>出现：ERROR 1045 (28000): Access denied for user ‘root‘@’localhost’ </p>
-<h2 id="安装过程"><a href="#安装过程" class="headerlink" title="安装过程"></a>安装过程</h2><p>##1. 输入以下命令进行安装MySQL5.7</p>
-<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> mysql-server
-<span class="token function">apt-get</span> isntall mysql-client
-<span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> libmysqlclient-dev
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>安装过程中会提示设置密码什么的，注意设置了不要忘了，安装完成之后可以使用如下命令来检查是否安装成功：</p>
-<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">netstat</span> -tap <span class="token operator">|</span> <span class="token function">grep</span> mysql
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>通过上述命令检查之后，如果看到有mysql 的socket处于 listen 状态则表示安装成功。<br>登陆mysql数据库可以通过如下命令：</p>
-<pre class="line-numbers language-bash"><code class="language-bash">mysql -u root -p
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>-u 表示选择登陆的用户名， -p 表示登陆的用户密码，上面命令输入之后会提示输入密码，此时输入密码就可以登录到mysql。</p>
-<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>在我安装过程中，并未提示我设置root密码。安装完成后无法登陆，不带密码也无法登录。<br>在安装过程中会设置初始密码</p>
-<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">sudo</span> vim /etc/mysql/debian.cnf
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>然后使用其中的</p>
-<pre class="line-numbers language-bash"><code class="language-bash">user <span class="token operator">=</span> debin-sys-maint
-password <span class="token operator">=</span> *********
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>这个账户登录：</p>
-<pre class="line-numbers language-bash"><code class="language-bash">mysql -u debin-sys-maint -p  ***********
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>可以成功登录,然后修改密码：</p>
-<pre class="line-numbers language-bash"><code class="language-bash">1.mysql<span class="token operator">></span>update mysql.user <span class="token keyword">set</span> authentication_string<span class="token operator">=</span>password<span class="token punctuation">(</span><span class="token string">'新密码放到这'</span><span class="token punctuation">)</span> where user<span class="token operator">=</span><span class="token string">'root'</span> and Host <span class="token operator">=</span> <span class="token string">'localhost'</span><span class="token punctuation">;</span>
-
-2.mysql<span class="token operator">></span>update mysql.user <span class="token keyword">set</span> plugin<span class="token operator">=</span><span class="token string">"mysql_native_password"</span><span class="token punctuation">;</span>
-
-3.mysql<span class="token operator">></span>flush privileges<span class="token punctuation">;</span>
-
-4.mysql<span class="token operator">></span>quit
-
-5.<span class="token variable">$sudo</span> <span class="token function">service</span> mysql restart
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>然后就可以使用你设置的root密码登录root账户</p>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://www.linuxidc.com/Linux/2017-05/143864.htm" target="_blank" rel="noopener">Ubuntu 16.04 上安装 MySQL 5.7 教程</a><br><a href="https://blog.csdn.net/weixin_42353109/article/details/81431051" target="_blank" rel="noopener">Ubuntu下MySQL5.7初始密码修改（附：Windows下MySQL8.0.11找出初始密码）</a></p>
-
+                
             </div>
             <hr>
 
@@ -558,7 +516,7 @@ password <span class="token operator">=</span> *********
                     </span>
                     <a href="http://jenkiny.github.io" class="b-link-green">Skyzc</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/03/29/ubuntu-install-mysql5.7/" class="b-link-green">Ubuntu 18.04安装 Mysql5.7</a>
+                    <a href="/2019/04/11/avicii-sos/" class="b-link-green">Avicii-SOS</a>
                 </p>
             </div>
         </div>
@@ -583,31 +541,30 @@ password <span class="token operator">=</span> *********
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/04/03/springboot-learn01-li-yong-idea-kuai-su-da-jian-yi-ge-springboo-xiang-mu/">
+                <a href="/2019/04/13/bu-zhi-dao-xie-dian-shi-me-na-jiu-xie-xie-zi-ji/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="SpringBoot-Learn01利用Idea快速搭建一个Springboo项目">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="不知道写点什么?那就写写自己">
                         
-                        <span class="card-title">SpringBoot-Learn01利用Idea快速搭建一个Springboo项目</span>
+                        <span class="card-title">不知道写点什么?那就写写自己</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">Preface:    IDEA:2018.3.6
-    JDK:1.8
+                    <div class="summary">Hello World
+相信每个程序员对Hello’World肯定都会有特殊的情结吧^^
 
-​    参考：How2j-Springboot入门-idea 推荐这个网站，教程很详细而且都有实例代码提供下载。
-MainBody:1.利用 Spring In</div>
+一直想拥有一个属于自己的网站博客，公众号，这个想法在很早的时候就已经萌生在心底了。倒也不是懒，只是最近一直忙着别的事，回想两年来的确做过很多有意义的</div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-03
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-13
                         </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/学习笔记/" class="post-category" target="_blank">
-                                    学习笔记
+                            <a href="/categories/废话手册/" class="post-category" target="_blank">
+                                    废话手册
                                 </a>
                             
                             
@@ -617,8 +574,8 @@ MainBody:1.利用 Spring In</div>
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/SpringBoot/" target="_blank">
-                        <span class="chip bg-color">SpringBoot</span>
+                    <a href="/tags/随笔/" target="_blank">
+                        <span class="chip bg-color">随笔</span>
                     </a>
                     
                 </div>
@@ -629,48 +586,49 @@ MainBody:1.利用 Spring In</div>
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="fa fa-dot-circle-o"></i>
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/03/29/ubuntu-install-mysql5.7/">
+                <a href="/2019/04/08/renren-security-xue-xi-bi-ji-01/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Ubuntu 18.04安装 Mysql5.7">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="renren-security学习笔记01">
                         
-                        <span class="card-title">Ubuntu 18.04安装 Mysql5.7</span>
+                        <span class="card-title">renren-security学习笔记01</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">出现：ERROR 1045 (28000): Access denied for user ‘root‘@’localhost’ 
-安装过程##1. 输入以下命令进行安装MySQL5.7
-sudo apt-get install mysql</div>
+                    <div class="summary">说明：​    记录自己学习 renrennnn-security 的一些步骤以及踩的一些坑。
+​    环境：
+        JDK:1.8
+        Mysql:5.7
+        renren-security: V4.0</div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-03-29
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-08
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/学习笔记/" class="post-category" target="_blank">
-                                    学习笔记
+                            <a href="/categories/后端开发/" class="post-category" target="_blank">
+                                    后端开发
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/学习笔记/" target="_blank">
-                        <span class="chip bg-color">学习笔记</span>
+                    <a href="/tags/java/" target="_blank">
+                        <span class="chip bg-color">java</span>
                     </a>
                     
-                    <a href="/tags/Ubuntu/" target="_blank">
-                        <span class="chip bg-color">Ubuntu</span>
+                    <a href="/tags/Springboot/" target="_blank">
+                        <span class="chip bg-color">Springboot</span>
                     </a>
                     
                 </div>
