@@ -5,7 +5,16 @@
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
     <meta name="keywords" content="Avicii-SOS, Skyzc">
-    <meta name="description" content="Avicii-SOS | Skyzc">
+    <meta name="description" content="// 汽车类
+class Vehicle 
+{
+   public:
+      Vehicle();  // 这是构造函数
+};
+// 汽车类构造函数
+Vehicle::Vehicle(void)
+{
+    cout ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -346,7 +355,7 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        0
+                        24
                     </div>
                     
 
@@ -369,7 +378,69 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <pre class="line-numbers language-c++"><code class="language-c++">// 汽车类
+class Vehicle 
+{
+   public:
+      Vehicle();  // 这是构造函数
+};
+// 汽车类构造函数
+Vehicle::Vehicle(void)
+{
+    cout << "我是汽车类的构造函数" << endl;
+}
+
+// 卡车类
+class Truck: public Vehicle
+{
+   public:
+       Truck();  // 这是构造函数
+       Truck(string name);  // 有参构造函数
+};
+// 卡车类构造函数
+Truck::Truck(void)
+{
+    cout << "我是卡车类的构造函数" << endl;
+}
+Truck::Truck( string name)
+{
+    cout << "我"<< name << "的卡车" << endl;
+}
+// 调用
+int main(void)
+{
+   Truck Tr("廖秋燕");
+}
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-c#"><code class="language-c#"> public class Vehicle
+    {
+        public Vehicle()
+        {
+            Console.WriteLine("我是汽车类的构造函数");
+        }
+
+    }
+class Truck:Vehicle
+    {
+        public Truck()
+        {
+            Console.WriteLine("我是卡车类的构造函数");
+        }
+        public Truck(string name)
+        {
+            Console.WriteLine(string.Format("我是name:{0} 的卡车",name));
+        }
+    }
+ class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Truck truck = new Truck("廖秋燕");
+        }
+    }
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
             </div>
             <hr>
 
@@ -786,7 +857,7 @@ Hello World
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">5.1k</span>
+                <span class="white-color">5.4k</span>
             
 
             

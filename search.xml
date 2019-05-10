@@ -4,6 +4,81 @@
   
     
     <entry>
+      <title>Win10安装Gradle</title>
+      <link href="/2019/05/10/win10-an-zhuang-gradle/"/>
+      <url>/2019/05/10/win10-an-zhuang-gradle/</url>
+      
+        <content type="html"><![CDATA[<h2 id="1-认识gradle"><a href="#1-认识gradle" class="headerlink" title="1.认识gradle"></a>1.认识gradle</h2><p>​    Gradle是一个基于Apache Ant和Apache Maven概念的<code>项目自动化构建开源工具</code>。它使用一种基于Groovy的特定领域语言(DSL)来声明项目设置，抛弃了基于XML的各种繁琐配置。</p><p>面向Java应用为主。当前其支持的语言限于Java、Groovy、Kotlin和Scala，计划未来将支持更多的语言。</p><p>Gradle是一个<code>基于JVM(需要安装java)</code>的构建工具，是一款通用灵活的构建工具，支持maven， Ivy仓库，支持传递性依赖管理，而不需要远程仓库或者是pom.xml和ivy.xml配置文件，基于Groovy，build脚本使用Groovy编写。</p><h2 id="2-确保电脑上安装了7-0或更高版本的Java-JDK或JER"><a href="#2-确保电脑上安装了7-0或更高版本的Java-JDK或JER" class="headerlink" title="2.确保电脑上安装了7.0或更高版本的Java JDK或JER"></a>2.确保电脑上安装了7.0或更高版本的Java JDK或JER</h2><p>打开命令行，输入 ‘java -version’查看java版本</p><pre class="line-numbers language-bash"><code class="language-bash">λ java -versionjava version <span class="token string">"1.8.0_211"</span>Java<span class="token punctuation">(</span>TM<span class="token punctuation">)</span> SE Runtime Environment <span class="token punctuation">(</span>build 1.8.0_211-b12<span class="token punctuation">)</span>Java HotSpot<span class="token punctuation">(</span>TM<span class="token punctuation">)</span> 64-Bit Server VM <span class="token punctuation">(</span>build 25.211-b12, mixed mode<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><h2 id="3-下载最新版本的Gradle"><a href="#3-下载最新版本的Gradle" class="headerlink" title="3.下载最新版本的Gradle"></a>3.下载最新版本的Gradle</h2><p><a href="https://gradle.org/releases/" target="_blank" rel="noopener">传送门-下载最新Gradle</a></p><p>这里下载complete版本的，也就是完全版</p><p><img src="http://skyzc.oss-cn-shenzhen.aliyuncs.com/MyBlog/win10-gradle/%E4%B8%8B%E8%BD%BDGradle.png" alt="官网下载最新版Gradle"></p><h2 id="4-解压下载的压缩包"><a href="#4-解压下载的压缩包" class="headerlink" title="4.解压下载的压缩包"></a>4.解压下载的压缩包</h2><p><img src="http://skyzc.oss-cn-shenzhen.aliyuncs.com/MyBlog/win10-gradle/%E8%A7%A3%E5%8E%8BGradle.png" alt="解压"></p><h2 id="5-修改环境变量"><a href="#5-修改环境变量" class="headerlink" title="5.修改环境变量"></a>5.修改环境变量</h2><h4 id="01-新增环境变量GRADLE-HOME-值为你解压后的文件夹位置，如我的"><a href="#01-新增环境变量GRADLE-HOME-值为你解压后的文件夹位置，如我的" class="headerlink" title="01.新增环境变量GRADLE_HOME ,值为你解压后的文件夹位置，如我的:"></a>01.新增环境变量<code>GRADLE_HOME</code> ,值为你解压后的文件夹位置，如我的:</h4><p><img src="http://skyzc.oss-cn-shenzhen.aliyuncs.com/MyBlog/win10-gradle/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F01.png" alt="env01"></p><h4 id="02-修改系统-path-变量，增加值：-GRADLE-HOME-bin"><a href="#02-修改系统-path-变量，增加值：-GRADLE-HOME-bin" class="headerlink" title="02.修改系统 path 变量，增加值：%GRADLE_HOME%\bin"></a>02.修改系统 <code>path</code> 变量，增加值：%GRADLE_HOME%\bin</h4><p><img src="http://skyzc.oss-cn-shenzhen.aliyuncs.com/MyBlog/win10-gradle/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F02.png" alt="env02"></p><h2 id="6-测试"><a href="#6-测试" class="headerlink" title="6.测试"></a>6.测试</h2><p>cmd输入 <code>gradle -v</code>:</p><p><img src="http://skyzc.oss-cn-shenzhen.aliyuncs.com/MyBlog/win10-gradle/%E6%B5%8B%E8%AF%95.png" alt="测试"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Gradle </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>420-把今天交给音乐</title>
+      <link href="/2019/04/19/420-ba-jin-tian-jiao-gei-yin-le/"/>
+      <url>/2019/04/19/420-ba-jin-tian-jiao-gei-yin-le/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 分类 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 标签 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>不知道写点什么?那就写写</title>
+      <link href="/2019/04/19/bu-zhi-dao-xie-dian-shi-me-na-jiu-xie-xie/"/>
+      <url>/2019/04/19/bu-zhi-dao-xie-dian-shi-me-na-jiu-xie-xie/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 分类 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 标签 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>手摸手教你MyBatis-plus</title>
       <link href="/2019/04/15/shou-mo-shou-jiao-ni-kai-qi-mybatis-plus/"/>
       <url>/2019/04/15/shou-mo-shou-jiao-ni-kai-qi-mybatis-plus/</url>
@@ -60,7 +135,7 @@
       <link href="/2019/04/11/avicii-sos/"/>
       <url>/2019/04/11/avicii-sos/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<pre class="line-numbers language-c++"><code class="language-c++">// 汽车类class Vehicle {   public:      Vehicle();  // 这是构造函数};// 汽车类构造函数Vehicle::Vehicle(void){    cout << "我是汽车类的构造函数" << endl;}// 卡车类class Truck: public Vehicle{   public:       Truck();  // 这是构造函数       Truck(string name);  // 有参构造函数};// 卡车类构造函数Truck::Truck(void){    cout << "我是卡车类的构造函数" << endl;}Truck::Truck( string name){    cout << "我"<< name << "的卡车" << endl;}// 调用int main(void){   Truck Tr("廖秋燕");}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><pre class="line-numbers language-c#"><code class="language-c#"> public class Vehicle    {        public Vehicle()        {            Console.WriteLine("我是汽车类的构造函数");        }    }class Truck:Vehicle    {        public Truck()        {            Console.WriteLine("我是卡车类的构造函数");        }        public Truck(string name)        {            Console.WriteLine(string.Format("我是name:{0} 的卡车",name));        }    } class Program    {        static void Main(string[] args)        {            Truck truck = new Truck("廖秋燕");        }    }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
       
       
       <categories>
